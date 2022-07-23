@@ -7,7 +7,8 @@
 /[Oo]bj/
 /[Bb]uild/
 /[Bb]uilds/
-/[Ll]ogs/
+/[Ll]ogs
+/[Ll]ogs/d
 /[Mm]emoryCaptures/
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
@@ -57,4 +58,3 @@ sysinfo.txt
 
 # Crashlytics generated file
 crashlytics-build.properties
-
