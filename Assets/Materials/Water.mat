@@ -117,7 +117,7 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Surface: 0
-    - _WaterDepthFadeDistance: 0
+    - _WaterDepthFadeDistance: 1.41
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
