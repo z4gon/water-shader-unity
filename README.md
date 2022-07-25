@@ -28,6 +28,7 @@ With Shader Graph in **Unity 2021.3.0f1**
 ### Water depth effect
 
 ![Water depth effect](./docs/screenshots/water_depth.gif)
+![Water depth effect](./docs/screenshots/water_depth_colored.gif)
 
 #### Sub Graph for the depth fade effect
 
