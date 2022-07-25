@@ -124,6 +124,7 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Surface: 0
+    - _Use_Waves: 1
     - _WaterDepthFadeDistance: 1.44
     - _Water_Depth_Fade_Distance: 0.66
     - _Wave_Scale: 20
