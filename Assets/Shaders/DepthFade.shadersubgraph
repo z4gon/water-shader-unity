@@ -5,6 +5,9 @@
     "m_Properties": [
         {
             "m_Id": "3125588766274e0b9e6561c443a56cfe"
+        },
+        {
+            "m_Id": "e29e2845db534457a968942542ed80b5"
         }
     ],
     "m_Keywords": [],
@@ -38,6 +41,9 @@
         },
         {
             "m_Id": "c202d7a93a6c4143924a6caaba5b5e2b"
+        },
+        {
+            "m_Id": "91023722f30c429fb136a8c878605588"
         }
     ],
     "m_GroupDatas": [],
@@ -114,6 +120,20 @@
             "m_InputSlot": {
                 "m_Node": {
                     "m_Id": "c202d7a93a6c4143924a6caaba5b5e2b"
+                },
+                "m_SlotId": 0
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
+                    "m_Id": "91023722f30c429fb136a8c878605588"
+                },
+                "m_SlotId": 0
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "229c7bc5ad5b491fb77e08587962571d"
                 },
                 "m_SlotId": 0
             }
@@ -587,6 +607,31 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector4MaterialSlot",
+    "m_ObjectId": "66997091b1e441c5a26680850bd08822",
+    "m_Id": 0,
+    "m_DisplayName": "Scene Depth UV",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Out",
+    "m_StageCapability": 3,
+    "m_Value": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+    },
+    "m_DefaultValue": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+    },
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.DynamicVectorMaterialSlot",
     "m_ObjectId": "6ce63cef492e4e8ea75508859bb29957",
     "m_Id": 1,
@@ -718,6 +763,41 @@
     },
     "m_Labels": [],
     "m_ScreenSpaceType": 0
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
+    "m_ObjectId": "91023722f30c429fb136a8c878605588",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "Property",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": -1101.0,
+            "y": -10.0,
+            "width": 163.0,
+            "height": 34.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "66997091b1e441c5a26680850bd08822"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    },
+    "m_Property": {
+        "m_Id": "e29e2845db534457a968942542ed80b5"
+    }
 }
 
 {
@@ -1025,7 +1105,37 @@
     "m_ChildObjectList": [
         {
             "m_Id": "3125588766274e0b9e6561c443a56cfe"
+        },
+        {
+            "m_Id": "e29e2845db534457a968942542ed80b5"
         }
     ]
+}
+
+{
+    "m_SGVersion": 1,
+    "m_Type": "UnityEditor.ShaderGraph.Internal.Vector4ShaderProperty",
+    "m_ObjectId": "e29e2845db534457a968942542ed80b5",
+    "m_Guid": {
+        "m_GuidSerialized": "929584cc-4a57-4233-b1d6-f91073282235"
+    },
+    "m_Name": "Scene Depth UV",
+    "m_DefaultRefNameVersion": 1,
+    "m_RefNameGeneratedByDisplayName": "Scene Depth UV",
+    "m_DefaultReferenceName": "_Scene_Depth_UV",
+    "m_OverrideReferenceName": "",
+    "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
+    "m_Precision": 0,
+    "overrideHLSLDeclaration": false,
+    "hlslDeclarationOverride": 0,
+    "m_Hidden": false,
+    "m_Value": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+    }
 }
 

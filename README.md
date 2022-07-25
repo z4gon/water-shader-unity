@@ -122,6 +122,7 @@ Integrating low poly assets from the asset store
       1. Add the normals to the Screen Position (Fragment Position)
       1. Use the transformed Screen Position as UVs to get the Screen Color from objects behind the water
       1. Lerp this deformed Screen Color with the Depth Color from before, using the colors alpha.
+      1. Connect the transformed UVs as source for the **Scene Depth** too, to make the water depth get refractions too
 
 1. **Apply to object**
    1. Create a Material with the Shader and apply it to the Water plane
