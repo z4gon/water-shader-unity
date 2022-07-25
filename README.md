@@ -41,6 +41,8 @@ How objects that are occluded by the object with the shader are used by the shad
 
 #### Water color section (lerp)
 
+[Shader example by Binary Lunar](https://www.youtube.com/watch?v=MHdDUqJHJxM)
+
 Lerp between shallow water color and deep water color, using the Depth Fade sub graph.
 
 ![Water color section](./docs/screenshots/water_color_section.png)
@@ -69,6 +71,8 @@ Tiles and offsets UV coordinates given a speed and a scale.
 
 #### Refraction section (normal gradient with scene color)
 
+[Shader example by Binary Lunar](https://www.youtube.com/watch?v=MHdDUqJHJxM)
+
 Generate a normals map from a time looped gradient noise, then add it to the Screen Position to displace it. Use these UVs from screen position to get a displaced and deformed Scene Color from objects behind.
 
 ![Water Refraction section](./docs/screenshots/water_refraction_section.png)
@@ -84,6 +88,8 @@ Looped gradient noise, stepped by the depth fade calculation. Then lerped with t
 ![Foam effect](./docs/screenshots/water_foam.gif)
 
 #### Foam section (stepped gradient noise)
+
+[Shader example by Binary Lunar](https://www.youtube.com/watch?v=MHdDUqJHJxM)
 
 Generate a Depth Fade 0..1 value, to then use as Step against a looped gradient noise. Use this result to multiply it with the foam color alpha channel.
 
