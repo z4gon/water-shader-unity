@@ -75,6 +75,24 @@ Generate a normals map from a time looped gradient noise, then add it to the Scr
 
 ---
 
+### Foam effect
+
+#### Progress
+
+Looped gradient noise, stepped by the depth fade calculation. Then lerped with the depth fade colors, and finally lerped with the refraction of the scene color.
+
+![Foam effect](./docs/screenshots/water_foam.gif)
+
+#### Foam section (stepped gradient noise)
+
+Generate a Depth Fade 0..1 value, to then use as Step against a looped gradient noise. Use this result to multiply it with the foam color alpha channel.
+
+Finally use this stepped alpha for the foam, and lerp the water depth colors with the foam color, using this stepped alpha.
+
+![Water Foam section](./docs/screenshots/water_foam_section.png)
+
+---
+
 ### Scene objects setup
 
 Integrating low poly assets from the asset store.
@@ -115,7 +133,7 @@ Integrating low poly assets from the asset store.
 
    1. **Depth color fade**
 
-      1. Use the Sub Graph to lerp between two colors (shallow and deep water)
+      1. Use the Depth Fade Sub Graph to lerp between two colors (shallow and deep water)
 
 1. **Refraction effect**
 
@@ -128,7 +146,7 @@ Integrating low poly assets from the asset store.
       1. Output the Vector2 which will affect the UVs of the refraction later.
 
    1. **Water Refraction**
-      1. Use the UV Movement sub graph to loop over time a gradient noise, using the Water Refraction Speed and Scale inputs.
+      1. Use the UV Movement Sub Graph to loop over time a gradient noise, using the Water Refraction Speed and Water Refraction Scale inputs.
       1. Generate a normals map from heights using this looping gradient noise.
       1. Multiply the normals by a Refraction Strenght input to be able to adjust dynamically.
       1. Add the normals to the Screen Position (Fragment Position)
@@ -137,6 +155,15 @@ Integrating low poly assets from the asset store.
       1. Set the alpha of the shader output to 1, because we are now manually lerping the blend with the scene color.
       1. **Refractions for Water Depth**
          - Connect the transformed UVs as source for the **Scene Depth** too, to make the water depth get refractions too.
+
+1. **Foam effect**
+
+   1. Use the **Depth Fade** Sub Graph using the Foam Amount input, to generate a cutoff of where the foam should stop. (Foam should only show where objects are closer to the mesh)
+   1. Use the **UV Movement** Sub Graph to loop over time a gradient noise, using the Foam Speed and Foam Scale inputs.
+   1. Use the Step node to cut off the gradient to the calculated cutoff using the depth fade.
+   1. Use this cut gradient and multiply it by the alpha channel of the foam color, to make it have the correct transparency.
+   1. Finally lerp the two-color depth fade colors with the foam color, using the alpha we just calculated for the cutoff gradient for the foam. This will make a transition between the water colors and the foam.
+   1. Now make the final lerp be between the refracted scene color and the combined water color + foam, based on the alpha channel for transparency.
 
 1. **Apply to object**
    1. Create a Material with the Shader and apply it to the Water plane.
