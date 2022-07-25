@@ -11,23 +11,33 @@ With Shader Graph in **Unity 2021.3.0f1**
 
 ## Implementation explained
 
-- Use Universal Render Pipeline
-- Enable Depth Texture and Opaque Texture in the Scriptable Object for the Render Pipeline
-- Make a Sub Graph that calculates a (0,1) value using:
-  - Scene Depth Node with Eye sampling (Depth Texture)
-  - Screen Position Node (Fragment Position)
-  - Substract these to calculate "Water Depth" = Scene Depth - Fragment Depth
+- Use the Universal Render Pipeline
+- In the Scriptable Object asset for the Render Pipeline Enable:
+  - Depth Texture
+  - Opaque Texture
+- **Make a Sub Graph that does:**
+  - **Scene Depth Node** with Eye sampling (Depth Texture)
+  - **Screen Position Node** with Raw mode (Fragment Position)
+    - Take just the Aplha channel which contains the Fragment Postion
+  - Substract these two to calculate **"Water Depth" = Scene Depth - Fragment Position**
   - Divide by a scaling factor to dynamically adjust the fading color for the water depth via property
   - Finally clamp the value to (0,1) to use it as lerp between two colors (shallow and deep water)
-- Create a Material with a Shader for the Water
+- **Shader for the Water**
   - Make the Shader's Surface Type transparent
-  - Apply the Shader to the plane and make the plane not cast shadows
+  - **Depth color fade**
+    - Use the Sub Graph to lerp between two colors (shallow and deep water)
+- Create a Material with the Shader and apply it to the Water plane
 
 ## Screenshots
 
 ### Water depth effect
 
+#### Progress
+
+Water Depth = Scene Depth - Fragment Position
 ![Water depth effect](./docs/screenshots/water_depth.gif)
+
+Lerping between the two colors
 ![Water depth effect](./docs/screenshots/water_depth_colored.gif)
 
 #### Sub Graph for the depth fade effect
