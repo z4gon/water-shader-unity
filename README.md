@@ -4,14 +4,14 @@ With Shader Graph in **Unity 2021.3.0f1**
 
 ## Fatures
 
-- [Water depth color fade](#water-depth-effect)
+- [Water depth color fade effect](#water-depth-color-fade-effect)
 - [Refraction effect](#refraction-effect)
-- Geometry displacement for wave effects
 - [Foam effect](#foam-effect)
+- [Waves effect](#waves-effect)
 
 ## Screenshots
 
-### Water depth effect
+### Water depth color fade effect
 
 #### Progress
 
@@ -99,6 +99,32 @@ Finally use this stepped alpha for the foam, and lerp the water depth colors wit
 
 ---
 
+### Waves effect
+
+#### Progress
+
+Normal vectors transformed with a gradient noise. Then added to the position vectors to displace the geometry.
+
+![Waves effect](./docs/screenshots/water_waves.gif)
+
+#### Waves section (displacing the geometry)
+
+[Shader example by Brackeys](https://www.youtube.com/watch?v=Vg0L9aCRWPE)
+
+Time loop a gradient noise to transform the normal vectors, then add these vectors to the position vector.
+
+![Water Waves section](./docs/screenshots/water_waves_section.png)
+
+---
+
+### Complete Graph
+
+All the sections working together.
+
+![Complete Graph](./docs/screenshots/complete_graph.png)
+
+---
+
 ### Scene objects setup
 
 Integrating low poly assets from the asset store.
@@ -170,6 +196,14 @@ Integrating low poly assets from the asset store.
    1. Use this cut gradient and multiply it by the alpha channel of the foam color, to make it have the correct transparency.
    1. Finally lerp the two-color depth fade colors with the foam color, using the alpha we just calculated for the cutoff gradient for the foam. This will make a transition between the water colors and the foam.
    1. Now make the final lerp be between the refracted scene color and the combined water color + foam, based on the alpha channel for transparency.
+
+1. **Waves effect**
+
+   1. Use the **UV Movement** Sub Graph to loop over time a gradient noise, using the Waves Speed and Waves Scale inputs.
+   1. Multiply the Normal Vector by this gradient noise.
+   1. Add these transformed Normal Vectors to the Position Vector to displace the fragment geometry
+   1. Conditionally discard these values if "Use Waves" was set to false.
+   1. Set the result position as the position in the output of the shader graph.
 
 1. **Apply to object**
    1. Create a Material with the Shader and apply it to the Water plane.
