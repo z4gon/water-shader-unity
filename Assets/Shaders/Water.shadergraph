@@ -174,6 +174,24 @@
         },
         {
             "m_Id": "6bac946927e74a8fbcb5e299adb94e65"
+        },
+        {
+            "m_Id": "cb91a2dc9ec54b1dae1e2cf310ebfe4e"
+        },
+        {
+            "m_Id": "c4d30bdc786948699414a634d892531c"
+        },
+        {
+            "m_Id": "9d7512ed4f6940bbb022e61f46378633"
+        },
+        {
+            "m_Id": "22451fbbe66a45c88647e22725ca5f9d"
+        },
+        {
+            "m_Id": "e2658de7acd84672a02cdba2d7b2b667"
+        },
+        {
+            "m_Id": "dd837f9b2d8543548c01ab873d9d5313"
         }
     ],
     "m_Edges": [
@@ -628,8 +646,8 @@
     ],
     "m_VertexContext": {
         "m_Position": {
-            "x": 1884.0,
-            "y": 29.0
+            "x": 2018.0001220703125,
+            "y": 49.0
         },
         "m_Blocks": [
             {
@@ -645,8 +663,8 @@
     },
     "m_FragmentContext": {
         "m_Position": {
-            "x": 1884.0,
-            "y": 229.0
+            "x": 2018.0001220703125,
+            "y": 249.0
         },
         "m_Blocks": [
             {
@@ -1135,6 +1153,26 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "22451fbbe66a45c88647e22725ca5f9d",
+    "m_Title": "Multiply",
+    "m_Content": "By the alpha channel of the foam color, to keep the transparency of the selected foam color",
+    "m_TextSize": 0,
+    "m_Theme": 1,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": 521.0,
+        "y": 721.0,
+        "width": 223.0,
+        "height": 103.0
+    },
+    "m_Group": {
+        "m_Id": "88b01a920b8b4945930d06d215714137"
+    }
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "23d00243418e4b588d4369decd4dd421",
     "m_Id": 3,
@@ -1160,9 +1198,9 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -737.0000610351563,
-            "y": 884.0,
-            "width": 141.0,
+            "x": -777.0,
+            "y": 974.0,
+            "width": 141.00006103515626,
             "height": 34.0
         }
     },
@@ -1535,8 +1573,8 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -732.0000610351563,
-            "y": 934.0,
+            "x": -771.9999389648438,
+            "y": 1024.0,
             "width": 136.0,
             "height": 34.0
         }
@@ -1843,10 +1881,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -491.00006103515627,
-            "y": 555.0,
-            "width": 223.00006103515626,
-            "height": 302.0
+            "x": -530.9999389648438,
+            "y": 509.0000305175781,
+            "width": 223.0,
+            "height": 301.9999694824219
         }
     },
     "m_Slots": [
@@ -2240,9 +2278,9 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 156.0,
-            "y": 750.0,
-            "width": 208.0,
+            "x": 116.0001220703125,
+            "y": 840.0,
+            "width": 207.9998779296875,
             "height": 302.0
         }
     },
@@ -2278,10 +2316,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -179.00006103515626,
-            "y": 901.0,
-            "width": 208.00006103515626,
-            "height": 302.0001220703125
+            "x": -219.0,
+            "y": 991.0,
+            "width": 208.0,
+            "height": 302.0
         }
     },
     "m_Slots": [
@@ -2630,9 +2668,9 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 782.0,
-            "y": 570.0000610351563,
-            "width": 137.00006103515626,
+            "x": 781.9999389648438,
+            "y": 655.0000610351563,
+            "width": 137.0001220703125,
             "height": 33.99993896484375
         }
     },
@@ -2950,10 +2988,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 1072.0,
-            "y": 503.0000305175781,
-            "width": 208.0,
-            "height": 325.9999694824219
+            "x": 998.9999389648438,
+            "y": 593.0,
+            "width": 208.00006103515626,
+            "height": 326.0
         }
     },
     "m_Slots": [
@@ -2989,8 +3027,8 @@
     "m_ObjectId": "88b01a920b8b4945930d06d215714137",
     "m_Title": "Foam",
     "m_Position": {
-        "x": -762.0,
-        "y": 443.9999694824219
+        "x": -801.542724609375,
+        "y": 419.73162841796877
     }
 }
 
@@ -3123,6 +3161,26 @@
     },
     "m_Labels": [],
     "m_Space": 0
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "9d7512ed4f6940bbb022e61f46378633",
+    "m_Title": "Step",
+    "m_Content": "To cutoff the foam, whenever the gradient value exceeds the edge, it gets cut out.",
+    "m_TextSize": 0,
+    "m_Theme": 1,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": 102.0,
+        "y": 713.0,
+        "width": 223.0,
+        "height": 103.0
+    },
+    "m_Group": {
+        "m_Id": "88b01a920b8b4945930d06d215714137"
+    }
 }
 
 {
@@ -3422,10 +3480,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -716.0000610351563,
-            "y": 521.0,
-            "width": 148.0,
-            "height": 34.0
+            "x": -756.0,
+            "y": 475.0,
+            "width": 148.00006103515626,
+            "height": 34.000030517578128
         }
     },
     "m_Slots": [
@@ -3472,10 +3530,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -491.00006103515627,
-            "y": 901.0,
+            "x": -530.9999389648438,
+            "y": 991.0,
             "width": 208.0,
-            "height": 302.0001220703125
+            "height": 302.0
         }
     },
     "m_Slots": [
@@ -3595,10 +3653,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 227.0,
-            "y": 1119.0,
-            "width": 137.0,
-            "height": 34.0
+            "x": 116.00006103515625,
+            "y": 1209.0,
+            "width": 136.9998779296875,
+            "height": 34.0001220703125
         }
     },
     "m_Slots": [
@@ -3630,10 +3688,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 452.0,
-            "y": 1079.0,
+            "x": 340.99993896484377,
+            "y": 1169.0,
             "width": 120.0,
-            "height": 149.0
+            "height": 149.0001220703125
         }
     },
     "m_Slots": [
@@ -3681,6 +3739,26 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "c4d30bdc786948699414a634d892531c",
+    "m_Title": "Looping Gradient Noise",
+    "m_Content": "Looped, tiled and offsetted gradient noise to control the foam.",
+    "m_TextSize": 0,
+    "m_Theme": 1,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -221.0,
+        "y": 864.0,
+        "width": 223.0,
+        "height": 103.0
+    },
+    "m_Group": {
+        "m_Id": "88b01a920b8b4945930d06d215714137"
+    }
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.MultiplyNode",
     "m_ObjectId": "c923a7be747c4ea3b0ea67381c70b674",
     "m_Group": {
@@ -3691,9 +3769,9 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 680.9998779296875,
-            "y": 750.0,
-            "width": 208.0001220703125,
+            "x": 530.9999389648438,
+            "y": 840.0,
+            "width": 208.0,
             "height": 302.0
         }
     },
@@ -3718,6 +3796,26 @@
     "m_PreviewMode": 0,
     "m_CustomColors": {
         "m_SerializableColors": []
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "cb91a2dc9ec54b1dae1e2cf310ebfe4e",
+    "m_Title": "Depth Fade",
+    "m_Content": "Get the Depth Fade 0..1 value again to restrict where the foam will show up. The foal will only show where the fragment is close to other objects.",
+    "m_TextSize": 0,
+    "m_Theme": 1,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -757.0,
+        "y": 692.0,
+        "width": 200.0,
+        "height": 149.0
+    },
+    "m_Group": {
+        "m_Id": "88b01a920b8b4945930d06d215714137"
     }
 }
 
@@ -3935,6 +4033,26 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "dd837f9b2d8543548c01ab873d9d5313",
+    "m_Title": "Lerp",
+    "m_Content": "Mix the refracted Scene Color from objects behind the water plane, with the depth color + foam, based on the alpha channel of the depth color + foam mix.",
+    "m_TextSize": 0,
+    "m_Theme": 1,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": 1574.0,
+        "y": 115.0,
+        "width": 223.0,
+        "height": 103.0
+    },
+    "m_Group": {
+        "m_Id": ""
+    }
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "de872c746b7f48118294a472981a5a59",
     "m_Id": 1,
@@ -4033,6 +4151,26 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "e2658de7acd84672a02cdba2d7b2b667",
+    "m_Title": "Lerp",
+    "m_Content": "Between the water depth color and the foam color, based on the alpha of the cut off foam.",
+    "m_TextSize": 0,
+    "m_Theme": 1,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": 990.0,
+        "y": 467.0,
+        "width": 223.0,
+        "height": 103.0
+    },
+    "m_Group": {
+        "m_Id": "88b01a920b8b4945930d06d215714137"
+    }
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.MultiplyNode",
     "m_ObjectId": "e404679e4e5d4558a80c345da5f1d404",
     "m_Group": {
@@ -4107,9 +4245,9 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -713.0,
-            "y": 578.0,
-            "width": 144.99993896484376,
+            "x": -753.0,
+            "y": 532.0,
+            "width": 145.00006103515626,
             "height": 129.0
         }
     },
