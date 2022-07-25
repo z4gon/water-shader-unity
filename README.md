@@ -7,7 +7,7 @@ With Shader Graph in **Unity 2021.3.0f1**
 - [Water depth color fade](#water-depth-effect)
 - [Refraction effect](#refraction-effect)
 - Geometry displacement for wave effects
-- Foam effect
+- [Foam effect](#foam-effect)
 
 ## Screenshots
 
