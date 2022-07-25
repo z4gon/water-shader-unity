@@ -44,12 +44,22 @@ Lerp between shallow water color and deep water color, using the Depth Fade sub 
 
 ### Refraction effect
 
-#### UV Movement sub graph
+#### Progress
+
+Water Depth = Scene Depth - Fragment Position
+![Refraction depth effect](./docs/screenshots/water_refraction.gif)
+
+#### Sub Graph for UV Movement
 
 [Sub Graph example by Binary Lunar](https://www.youtube.com/watch?v=MHdDUqJHJxM)
 
 Tiles and offsets UV coordinates given a speed and a scale
 ![UV Movement sub graph](./docs/screenshots/uv_movement_sub_graph.png)
+
+#### Refraction section (normal gradient with scene color)
+
+Generate a normals map from a time looped gradient noise, then add it to the Screen Position to displace it. Use these UVs from screen position to get a displaced and deformed Scene Color from objects behind.
+![Water Refraction section](./docs/screenshots/water_refraction_section.png)
 
 ---
 
@@ -104,6 +114,14 @@ Integrating low poly assets from the asset store
       1. Tiling and Offset node to transform the UVs
       1. Scale inpupt to affect tiling
       1. Output the Vector2 which will affect the UVs of the refraction later
+
+   1. **Water Refraction**
+      1. Use the UV Movement sub graph to loop over time a gradient noise, using the Water Refraction Speed and Scale inputs
+      1. Generate a normals map using this gradient noise
+      1. Multiply the normals by a Refraction Strenght input
+      1. Add the normals to the Screen Position (Fragment Position)
+      1. Use the transformed Screen Position as UVs to get the Screen Color from objects behind the water
+      1. Lerp this deformed Screen Color with the Depth Color from before, using the colors alpha.
 
 1. **Apply to object**
    1. Create a Material with the Shader and apply it to the Water plane
