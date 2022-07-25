@@ -11,22 +11,38 @@ With Shader Graph in **Unity 2021.3.0f1**
 
 ## Implementation explained
 
-- Use the Universal Render Pipeline
-- In the Scriptable Object asset for the Render Pipeline Enable:
-  - Depth Texture
-  - Opaque Texture
-- **Make a Sub Graph that does:**
-  - **Scene Depth Node** with Eye sampling (Depth Texture)
-  - **Screen Position Node** with Raw mode (Fragment Position)
-    - Take just the Aplha channel which contains the Fragment Postion
-  - Substract these two to calculate **"Water Depth" = Scene Depth - Fragment Position**
-  - Divide by a scaling factor to dynamically adjust the fading color for the water depth via property
-  - Finally clamp the value to (0,1) to use it as lerp between two colors (shallow and deep water)
-- **Shader for the Water**
-  - Make the Shader's Surface Type transparent
-  - **Depth color fade**
-    - Use the Sub Graph to lerp between two colors (shallow and deep water)
-- Create a Material with the Shader and apply it to the Water plane
+1. **Project configuration**
+
+   1. Use the Universal Render Pipeline
+   1. In the Scriptable Object asset for the Render Pipeline Enable:
+      - Depth Texture
+      - Opaque Texture
+
+1. **Water depth effect**
+
+   1. **Make a Sub Graph using:**
+
+      1. **Scene Depth Node** with Eye sampling (Depth Texture)
+      1. **Screen Position Node** with Raw mode (Fragment Position)
+
+         > Take just the Aplha channel which contains the Fragment Postion
+
+      1. Substract these two to calculate **"Water Depth" = Scene Depth 1. Fragment Position**
+
+      1. Divide by a scaling factor to dynamically adjust the fading color for the water depth via property
+
+      1. Finally clamp the value to (0,1) to use it as lerp between two colors (shallow and deep water)
+
+   1. **Shader for the Water**
+
+      1. Make the Shader's Surface Type transparent
+
+   1. **Depth color fade**
+
+      1. Use the Sub Graph to lerp between two colors (shallow and deep water)
+
+1. **Apply to object**
+   1. Create a Material with the Shader and apply it to the Water plane
 
 ## Screenshots
 
