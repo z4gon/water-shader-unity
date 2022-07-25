@@ -19,8 +19,18 @@ With Shader Graph in Unity 2021.3.0f1
 
 ![Depth fade sub graph](./docs/screenshots/depth_fade_sub_graph.png)
 
+#### Understanding Fragment Depth vs Scene Depth (Depth Texture)
+
+[Depth by Cyanilux](https://www.cyanilux.com/tutorials/depth/#scene-depth-node)
+
+![Depth fade sub graph](./docs/screenshots/fragment_depth_vs_scene_depth.png)
+
+---
+
 ### Scene objects setup
 
 Integrating low poly assets from the asset store
+
+[Low-Poly Simple Nature Pack](https://assetstore.unity.com/packages/3d/environments/landscapes/low-poly-simple-nature-pack-162153)
 
 ![Scene objects setup](./docs/screenshots/scene_objects.gif)

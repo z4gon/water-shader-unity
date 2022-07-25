@@ -41,7 +41,26 @@
         }
     ],
     "m_GroupDatas": [],
-    "m_StickyNoteDatas": [],
+    "m_StickyNoteDatas": [
+        {
+            "m_Id": "57a6117a06a14a8c92dfc031d0459305"
+        },
+        {
+            "m_Id": "73552e213f084606a7c66eb6fac55cb3"
+        },
+        {
+            "m_Id": "49b5d760a78342e9be4e9a65496da17d"
+        },
+        {
+            "m_Id": "188bda9d06644729809adc5d44d0aba5"
+        },
+        {
+            "m_Id": "29c47eca6f5343d092ea6e8ac1036432"
+        },
+        {
+            "m_Id": "9eb26bbd5c8642e6b841cc71d00507e9"
+        }
+    ],
     "m_Edges": [
         {
             "m_OutputSlot": {
@@ -184,10 +203,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -489.0,
-            "y": -48.999969482421878,
-            "width": 208.0,
-            "height": 301.9999694824219
+            "x": -489.00006103515627,
+            "y": -49.0,
+            "width": 208.00006103515626,
+            "height": 302.0000305175781
         }
     },
     "m_Slots": [
@@ -272,6 +291,26 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "188bda9d06644729809adc5d44d0aba5",
+    "m_Title": "Substract",
+    "m_Content": "Scene Depth - Fragment Depth = Water Depth",
+    "m_TextSize": 1,
+    "m_Theme": 1,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -591.0,
+        "y": -173.0,
+        "width": 569.0,
+        "height": 104.0
+    },
+    "m_Group": {
+        "m_Id": ""
+    }
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "1cf01bdc75f24df9a169c283e6ec67dd",
     "m_Id": 2,
@@ -340,6 +379,26 @@
 }
 
 {
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "29c47eca6f5343d092ea6e8ac1036432",
+    "m_Title": "Divide",
+    "m_Content": "By distance to scale dynamically",
+    "m_TextSize": 0,
+    "m_Theme": 1,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -198.0,
+        "y": 275.0,
+        "width": 212.0,
+        "height": 100.0
+    },
+    "m_Group": {
+        "m_Id": ""
+    }
+}
+
+{
     "m_SGVersion": 1,
     "m_Type": "UnityEditor.ShaderGraph.Internal.Vector1ShaderProperty",
     "m_ObjectId": "3125588766274e0b9e6561c443a56cfe",
@@ -387,6 +446,26 @@
         "y": 0.0,
         "z": 0.0,
         "w": 0.0
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "49b5d760a78342e9be4e9a65496da17d",
+    "m_Title": "Split",
+    "m_Content": "We get just the alpha channel because it has the eye-space depth.",
+    "m_TextSize": 0,
+    "m_Theme": 1,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -676.0,
+        "y": 266.0,
+        "width": 141.0,
+        "height": 100.0
+    },
+    "m_Group": {
+        "m_Id": ""
     }
 }
 
@@ -444,6 +523,26 @@
         "y": 0.0,
         "z": 0.0,
         "w": 0.0
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "57a6117a06a14a8c92dfc031d0459305",
+    "m_Title": "Scene Depth",
+    "m_Content": "The Scene Depth node allows us to sample the camera’s Depth Texture which contains depth values - how far objects are from the camera plane.\n\nEye: Ranges from 0 at camera pos, 1 at 1 unit away, 10 at 10 units away, etc\n\nhttps://www.cyanilux.com/tutorials/depth/#scene-depth-node",
+    "m_TextSize": 0,
+    "m_Theme": 1,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -941.0,
+        "y": -225.0,
+        "width": 309.0,
+        "height": 160.0
+    },
+    "m_Group": {
+        "m_Id": ""
     }
 }
 
@@ -553,6 +652,26 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "73552e213f084606a7c66eb6fac55cb3",
+    "m_Title": "Screen Position",
+    "m_Content": "In this screenPosition value, the 4th component of the vector, \"w\" (or \"Alpha / a\" when you think of the vector as an RGBA colour), is the easiest to understand: it's the world-space depth of the pixel being drawn, measured from the camera, along its viewing axis. (Also called eye-space depth)\n\nhttps://gamedev.stackexchange.com/questions/186226/understanding-screen-position-node-in-unity-shader-graph",
+    "m_TextSize": 0,
+    "m_Theme": 1,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -1108.0,
+        "y": 108.0,
+        "width": 168.3624267578125,
+        "height": 300.7917175292969
+    },
+    "m_Group": {
+        "m_Id": ""
+    }
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.DynamicVectorMaterialSlot",
     "m_ObjectId": "8373b99da1354b2498831d9217db0bfd",
     "m_Id": 2,
@@ -599,6 +718,26 @@
     },
     "m_Labels": [],
     "m_ScreenSpaceType": 0
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "9eb26bbd5c8642e6b841cc71d00507e9",
+    "m_Title": "Clamp",
+    "m_Content": "Clamps the value between 0 and 1",
+    "m_TextSize": 0,
+    "m_Theme": 1,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": 86.0,
+        "y": 250.0,
+        "width": 212.0,
+        "height": 100.0
+    },
+    "m_Group": {
+        "m_Id": ""
+    }
 }
 
 {
