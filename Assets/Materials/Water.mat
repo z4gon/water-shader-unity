@@ -118,14 +118,14 @@ Material:
     - _SrcBlend: 1
     - _Surface: 0
     - _WaterDepthFadeDistance: 1.44
-    - _Water_Depth_Fade_Distance: 0.9
+    - _Water_Depth_Fade_Distance: 1.14
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Deep_Water_Color: {r: 0.06679422, g: 0.2623191, b: 0.745283, a: 0}
+    - _Deep_Water_Color: {r: 0, g: 0.19631386, b: 0.6792453, a: 0.7647059}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Shallow_Water_Color: {r: 0.2028302, g: 0.7435175, b: 1, a: 0}
+    - _Shallow_Water_Color: {r: 0.12941174, g: 0.75546974, b: 0.8980392, a: 0.3137255}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
