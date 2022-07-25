@@ -17,6 +17,8 @@ With Shader Graph in **Unity 2021.3.0f1**
 
 #### Sub Graph for the depth fade effect
 
+[Sub Graph example by Binary Lunar](https://www.youtube.com/watch?v=MHdDUqJHJxM)
+
 ![Depth fade sub graph](./docs/screenshots/depth_fade_sub_graph.png)
 
 #### Understanding Fragment Depth vs Scene Depth (Depth Texture)
