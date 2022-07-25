@@ -46,8 +46,11 @@ Lerp between shallow water color and deep water color, using the Depth Fade sub 
 
 #### Progress
 
-Water Depth = Scene Depth - Fragment Position
+Scene Color generated with transformed Scene Position, used a Normals Map generated with a time looped gradient noise
 ![Refraction depth effect](./docs/screenshots/water_refraction.gif)
+
+Apply refractions to the Scene Depth calculation
+![Water depth refracted](./docs/screenshots/water_depth_refracted.gif)
 
 #### Sub Graph for UV Movement
 
