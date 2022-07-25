@@ -122,18 +122,19 @@ Integrating low poly assets from the asset store.
    1. **Make a "UV Movement" Sub Graph using:**
 
       1. Time node to have a looping time value.
-      1. Speed input to make the time go faster or slower.
+      1. A Speed input to make the time go faster or slower.
       1. Tiling and Offset node to transform the UVs.
-      1. Scale inpupt to affect tiling.
+      1. A Scale input to affect tiling.
       1. Output the Vector2 which will affect the UVs of the refraction later.
 
    1. **Water Refraction**
       1. Use the UV Movement sub graph to loop over time a gradient noise, using the Water Refraction Speed and Scale inputs.
-      1. Generate a normals map using this gradient noise.
-      1. Multiply the normals by a Refraction Strenght input.
+      1. Generate a normals map from heights using this looping gradient noise.
+      1. Multiply the normals by a Refraction Strenght input to be able to adjust dynamically.
       1. Add the normals to the Screen Position (Fragment Position)
       1. Use the transformed Screen Position as UVs to get the Screen Color from objects behind the water.
       1. Lerp this deformed Screen Color with the Depth Color from before, using the colors alpha.
+      1. Set the alpha of the shader output to 1, because we are now manually lerping the blend with the scene color.
       1. **Refractions for Water Depth**
          - Connect the transformed UVs as source for the **Scene Depth** too, to make the water depth get refractions too.
 
