@@ -11,6 +11,9 @@ With Shader Graph in **Unity 2021.3.6f1**
 
 ## Screenshots
 
+![Cliff](./docs/screenshots/cliff.gif)
+![Lake](./docs/screenshots/lake.gif)
+
 ### Water depth color fade effect
 
 #### Progress
