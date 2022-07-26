@@ -4239,11 +4239,11 @@
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
     "m_Hidden": false,
-    "m_Value": 3.0,
+    "m_Value": 0.10000000149011612,
     "m_FloatType": 1,
     "m_RangeValues": {
-        "x": 1.0,
-        "y": 20.0
+        "x": 0.0010000000474974514,
+        "y": 4.0
     }
 }
 
