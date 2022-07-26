@@ -26,6 +26,8 @@ Lerping between the two colors.
 
 ![Water depth effect](./docs/screenshots/water_depth_colored.gif)
 
+![Water colors](./docs/screenshots/water_colors.gif)
+
 #### Sub Graph for the depth fade effect
 
 [Sub Graph example by Binary Lunar](https://www.youtube.com/watch?v=MHdDUqJHJxM)
