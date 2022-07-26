@@ -1,6 +1,6 @@
 # Water Shader
 
-With Shader Graph in **Unity 2021.3.0f1**
+With Shader Graph in **Unity 2021.3.6f1**
 
 ## Fatures
 
@@ -10,6 +10,9 @@ With Shader Graph in **Unity 2021.3.0f1**
 - [Waves effect](#waves-effect)
 
 ## Screenshots
+
+![Cliff](./docs/screenshots/cliff.gif)
+![Lake](./docs/screenshots/lake.gif)
 
 ### Water depth color fade effect
 
