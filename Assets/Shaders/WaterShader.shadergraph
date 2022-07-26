@@ -1066,7 +1066,7 @@
     "m_FloatType": 1,
     "m_RangeValues": {
         "x": 0.0,
-        "y": 2.0
+        "y": 0.5
     }
 }
 
@@ -1303,7 +1303,7 @@
     "m_FloatType": 1,
     "m_RangeValues": {
         "x": 10.0,
-        "y": 250.0
+        "y": 300.0
     }
 }
 
@@ -4428,7 +4428,7 @@
     "m_Hidden": false,
     "m_ShaderOutputName": "Scale",
     "m_StageCapability": 3,
-    "m_Value": 1.0,
+    "m_Value": 10.0,
     "m_DefaultValue": 10.0,
     "m_Labels": []
 }
