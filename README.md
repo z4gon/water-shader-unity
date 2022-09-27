@@ -2,7 +2,7 @@
 
 With Shader Graph in **Unity 2021.3.10f1**
 
-## Fatures
+## Features
 
 - [Water depth color fade effect](#water-depth-color-fade-effect)
 - [Refraction effect](#refraction-effect)
