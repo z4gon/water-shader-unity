@@ -214,3 +214,9 @@ Integrating low poly assets from the asset store.
 
 1. **Apply to object**
    1. Create a Material with the Shader and apply it to the Water plane.
+
+### References
+
+- [Sub Graph example by Binary Lunar](https://www.youtube.com/watch?v=MHdDUqJHJxM)
+- [Depth by Cyanilux](https://www.cyanilux.com/tutorials/depth/#scene-depth-node)
+- [Shader example by Brackeys](https://www.youtube.com/watch?v=Vg0L9aCRWPE)
