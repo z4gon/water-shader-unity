@@ -1,6 +1,6 @@
 # Water Shader
 
-With Shader Graph in **Unity 2021.3.10f1**
+With Shader Graph in **Unity 2022.3.3f1**
 
 ## Features
 
