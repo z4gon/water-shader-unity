@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: WaterCliff
+  m_Name: CliffWater
   m_Shader: {fileID: -6465566751694194690, guid: 1673052a546464ad799de334fe41f5d0,
     type: 3}
   m_Parent: {fileID: 0}
@@ -107,7 +107,7 @@ Material:
     - _DstBlend: 0
     - _EnvironmentReflections: 1
     - _Foam_Amount: 0.29
-    - _Foam_Scale: 180
+    - _Foam_Scale: 300
     - _Foam_Speed: 1.97
     - _Foam_Strength: 1
     - _GlossMapScale: 0
@@ -119,7 +119,7 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _Refraction_Scale: 2.59
+    - _Refraction_Scale: 5
     - _Refraction_Speed: 0.041
     - _Refraction_Strenght: 0.2
     - _Smoothness: 0.5
@@ -130,7 +130,7 @@ Material:
     - _Use_Waves: 1
     - _WaterDepthFadeDistance: 1.44
     - _Water_Depth_Fade_Distance: 0.8
-    - _Wave_Height: 0.61
+    - _Wave_Height: 0.81
     - _Wave_Scale: 0.07
     - _Wave_Speed: 0.02
     - _WorkflowMode: 1

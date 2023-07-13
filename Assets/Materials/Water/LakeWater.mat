@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: WaterLake
+  m_Name: LakeWater
   m_Shader: {fileID: -6465566751694194690, guid: 1673052a546464ad799de334fe41f5d0,
     type: 3}
   m_Parent: {fileID: 0}
