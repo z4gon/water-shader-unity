@@ -4171,12 +4171,12 @@ PrefabInstance:
     - target: {fileID: 3536349815643854723, guid: 7b968986510d24c208758479025895fc,
         type: 3}
       propertyPath: panSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3536349815643854723, guid: 7b968986510d24c208758479025895fc,
         type: 3}
       propertyPath: orbitSpeed
-      value: 80
+      value: 160
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
