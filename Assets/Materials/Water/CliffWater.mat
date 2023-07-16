@@ -120,7 +120,7 @@ Material:
     - _QueueOffset: 0
     - _ReceiveShadows: 1
     - _Refraction_Scale: 5
-    - _Refraction_Speed: 0.041
+    - _Refraction_Speed: 0.054
     - _Refraction_Strenght: 0.2
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
@@ -129,7 +129,7 @@ Material:
     - _Surface: 0
     - _Use_Waves: 1
     - _WaterDepthFadeDistance: 1.44
-    - _Water_Depth_Fade_Distance: 0.8
+    - _Water_Depth_Fade_Distance: 0.56
     - _Wave_Height: 0.81
     - _Wave_Scale: 0.07
     - _Wave_Speed: 0.02
