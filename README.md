@@ -2,6 +2,8 @@
 
 With Shader Graph in **Unity 2022.3.3f1**
 
+## [Live Demo](https://z4gon.github.io/water-shader-unity)
+
 ## Features
 
 - [Water depth color fade effect](#water-depth-color-fade-effect)
